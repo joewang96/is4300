@@ -190,6 +190,8 @@ input:not(:placeholder-shown) + i.fa {
 }
 #content-feed p.empty-result {
 	color: #aaa;
+	margin-top: -.5rem;
+    margin-bottom: 2rem;
 }
 
 /* --- content block --- */

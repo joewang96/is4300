@@ -60,21 +60,26 @@ Vue.component('content-feed', {
             results: []
         }
     },
-    props: ['search'],
+    props: {
+    	'search': String
+    },
     methods: {
         searchResults: function() {
         	var search = this.search;
-            return this.content.filter(function(item) {
-                return (item.type.toLowerCase().includes(search.toLowerCase())) || 
-                (item.title.toLowerCase().includes(search.toLowerCase())) || 
-                (item.description.toLowerCase().includes(search.toLowerCase()));
-            });
+        	if (search == "") {
+        		return [];
+        	} else {
+        		return this.content.filter(function(item) {
+	                return (item.type.toLowerCase().includes(search.toLowerCase())) || 
+	                (item.title.toLowerCase().includes(search.toLowerCase())) || 
+	                (item.desc.toLowerCase().includes(search.toLowerCase()));
+	            });
+        	}
         }
     },
     watch: {
     	search: function() {
     		this.results = this.searchResults();
-    		console.log(this.search);
     	}
     }
 });
