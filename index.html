@@ -25,22 +25,23 @@
 		<p class="brand-text">Joseph Wang</p>
 	</nav>
 
-	<!-- Hero section -->
-	<div class="section" id="hero">
-		<div class="container flex_parent">
-			<!--<h1 id="main_heading">Welcome to my <span class="hero_name">IS&nbsp;4300:</span> <span class="hero_name">Human</span> <span class="hero_name">Computer</span> <span class="hero_name">Interaction</span> course page</h1>-->
-			<h1 id="main_heading">IS 4300: Human Computer Interaction</h1>
-			<div class="input-group">
-				<input v-model="search" placeholder="Search for assignments...">
-				<i class="fa fa-search"></i>
+	<div id="app">
+		<!-- Hero section -->
+		<div class="section" id="hero">
+			<div class="container flex_parent">
+				<h1 id="main_heading">IS 4300: Human Computer Interaction</h1>
+				<div class="input-group">
+					<input v-model="search" placeholder="Search for assignments...">
+					<i class="fa fa-search"></i>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- Content section -->
-	<div class="section" id="content">
-		<div class="container flex_parent">
-			<content-feed></content-feed>
+		<!-- Content section -->
+		<div class="section" id="content">
+			<div class="container flex_parent">
+				<content-feed :search="search"></content-feed>
+			</div>
 		</div>
 	</div>
 

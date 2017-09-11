@@ -57,10 +57,10 @@ Vue.component('content-feed', {
 					]
 				}
             ],
-            search: "",
             results: []
         }
     },
+    props: ['search'],
     methods: {
         searchResults: function() {
         	var search = this.search;
@@ -74,6 +74,7 @@ Vue.component('content-feed', {
     watch: {
     	search: function() {
     		this.results = this.searchResults();
+    		console.log(this.search);
     	}
     }
 });
@@ -83,6 +84,10 @@ Vue.component('content-feed', {
 // 4. Create and mount the root instance.
 // Make sure to inject the router with the router option to make the
 // whole app router-aware.
-const app = new Vue({}).$mount('#content');
+const app = new Vue({
+	data: {
+		search: ""
+	}
+}).$mount('#app');
 
 
