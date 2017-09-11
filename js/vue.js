@@ -10,7 +10,7 @@ Vue.component('content-feed', {
     		<div class="color-key">
     			<p class="text-center"><span class="key-block individual"></span>: Individual <span class="key-block critique"></span>: Critique <span class="key-block project"></span>: Project</p>
     		</div>
-    		<div class="group">
+    		<div class="group bottom">
 	    		<h3 class="text-center heading">Search Results</h3>
 	    		<p v-if="results == 0" class="empty-result text-center">Nothing to show here</p>
 	    		<div class="content-block" v-else v-for="obj in results" v-bind:class="obj.type">
@@ -26,7 +26,7 @@ Vue.component('content-feed', {
 	        	</div>
         	</div>
 
-        	<div class="group"
+        	<div class="group">
 	    		<h3 class="text-center heading">All Assignments</h3>
 		        <div class="content-block" v-for="obj in content" v-bind:class="obj.type">
 	        		<p class="title">{{ obj.title }}</p>

@@ -177,8 +177,8 @@ input:not(:placeholder-shown) + i.fa {
 #content-feed .color-key p span.key-block:first-child {
 	margin-left: 0;
 }
-#content-feed .group:first-child {
-	margin-bottom: 2rem;
+#content-feed .group {
+	margin-bottom: 3rem;
 }
 /* --- headers --- */
 #content-feed h3.heading {
