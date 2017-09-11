@@ -51,7 +51,7 @@ Vue.component('content-feed', {
 					"desc": "Pick three different project ideas that you would be interested in working on, make a rough sketch of a user interface (a scanned or photographed sketch on paper is best) and write a 1 paragraph proposal for each, further fleshing out the idea. Post your write-ups and sketches on a web page in your order of preference.",
 					"content": [
 						{
-							"filepath": "README.md",
+							"filepath": "https://docs.google.com/document/d/1DWbYOKIBeK5iVXt2vZK-pMHcBOeiy4dCM3QnJRQRhlA/edit?usp=sharing",
 							"text": "Write Up & Sketches"
 						}
 					]
