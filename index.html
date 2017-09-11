@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<!-- Three important meta tags that come before everything else -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- Icon -->
+	<link rel="icon" href="img/purple_diamond.png">
+	<title>Joseph Wang | IS 4300 Course Page</title>
+	<!-- Google Fonts and Typography -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Vue import script -->
+	<script type="text/javascript" src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	
+	<!-- Top navigation -->
+	<nav class="nav-bar nav-pad">
+		<p class="brand-text">Joseph Wang</p>
+	</nav>
+
+	<!-- Hero section -->
+	<div class="section" id="hero">
+		<div class="container flex_parent">
+			<!--<h1 id="main_heading">Welcome to my <span class="hero_name">IS&nbsp;4300:</span> <span class="hero_name">Human</span> <span class="hero_name">Computer</span> <span class="hero_name">Interaction</span> course page</h1>-->
+			<h1 id="main_heading">IS 4300: Human Computer Interaction</h1>
+			<div class="input-group">
+				<input v-model="search" placeholder="Search for assignments...">
+				<i class="fa fa-search"></i>
+			</div>
+		</div>
+	</div>
+
+	<!-- Content section -->
+	<div class="section" id="content">
+		<div class="container flex_parent">
+			<content-feed></content-feed>
+		</div>
+	</div>
+
+<!-- JQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- JQuery UI CDN -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> 
+<!-- Vue components -->
+<script type="text/javascript" src="js/vue.js"></script>
+</body>
+</html>
