@@ -47,6 +47,17 @@ Vue.component('content-feed', {
             content: [
             	{
 					"type": "individual",
+					"title": "Individual HW 7: Heuristic Evaluation",
+					"desc": "This is a heuristic evaluation for Unteractive based on Neilson's 10 Heursitics. Below is a link to the PDF version of my critique of the interface.",
+					"content": [
+						{
+							"filepath": "files/i7_eval.pdf",
+							"text": "Heuristic Evaluation PDF"
+						}
+					]
+				},
+            	{
+					"type": "individual",
 					"title": "Individual HW 1: Project Brainstorming",
 					"desc": "Pick three different project ideas that you would be interested in working on, make a rough sketch of a user interface (a scanned or photographed sketch on paper is best) and write a 1 paragraph proposal for each, further fleshing out the idea. Post your write-ups and sketches on a web page in your order of preference.",
 					"content": [
