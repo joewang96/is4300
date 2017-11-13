@@ -206,7 +206,7 @@ input:not(:placeholder-shown) + i.fa {
 .content-block {
 	border-left: 8px solid;
 	padding-left: 12px;
-	margin-bottom: 1rem;
+	margin-bottom: 3rem;
 	width: 100%;
 }
 .content-block p.title {
